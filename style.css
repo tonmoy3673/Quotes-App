@@ -20,7 +20,7 @@ body{
 
 }
 .title{
-    font-size: 2.1rem;
+    font-size: 2rem;
     margin-bottom: 30px;
     position: relative;
 }
@@ -34,4 +34,28 @@ body{
     bottom: -10px;
     left:50%;
     transform: translateX(-50%);
+}
+#quote{
+    font-size: 1.6rem;
+    min-height: 110px;
+}
+#quote::before, #quote::after{
+    content: '"';
+}
+#author{
+    display: block;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+    font-size: 1rem;
+}
+#author::before{
+    content: '';
+    height: 2px;
+    width: 25px;
+    background: rgb(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -35px;
+
 }
