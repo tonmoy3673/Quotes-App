@@ -8,7 +8,7 @@ body{
 }
 .content{
     background: #f2f2f2;
-    width: 700px;
+    width: 650px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,6 +23,8 @@ body{
     font-size: 2rem;
     margin-bottom: 30px;
     position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 .title::after{
     content: '';
@@ -36,8 +38,9 @@ body{
     transform: translateX(-50%);
 }
 #quote{
-    font-size: 1.6rem;
+    font-size: 1.5rem;
     min-height: 110px;
+    font-family: "Playfair", serif;
 }
 #quote::before, #quote::after{
     content: '"';
@@ -45,9 +48,10 @@ body{
 #author{
     display: block;
     float: right;
-    margin-top: 10px;
+    
     position: relative;
     font-size: 1rem;
+    font-family: "Playfair", serif;
 }
 #author::before{
     content: '';
@@ -57,5 +61,43 @@ body{
     position: absolute;
     top: 50%;
     left: -35px;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 20px;
+    margin-top: 50px;
+}
+.btn-new{
+    padding:10px;
+    background: rgb(23, 124, 229);
+    border: 0;
+    outline: 0;
+    color: #f2f2f2;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border: 1px solid transparent;
 
+}
+.btn-new:hover{
+    background: transparent;
+    color: black;
+    border: 1px solid rgb(23, 124, 229);
+    display: block;
+
+}
+.btn-twitter{
+   
+    outline: 0;
+    border-radius: 6px;
+    cursor: pointer;
+    padding:10px;
+    border: 1px solid rgb(23, 124, 229);
+    transition: all 0.3s;
+}
+.btn-twitter:hover{
+    background: rgb(23, 124, 229);
+    color: #f2f2f2;
 }
