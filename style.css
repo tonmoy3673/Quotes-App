@@ -88,16 +88,3 @@ body{
     display: block;
 
 }
-.btn-twitter{
-   
-    outline: 0;
-    border-radius: 6px;
-    cursor: pointer;
-    padding:10px;
-    border: 1px solid rgb(23, 124, 229);
-    transition: all 0.3s;
-}
-.btn-twitter:hover{
-    background: rgb(23, 124, 229);
-    color: #f2f2f2;
-}
