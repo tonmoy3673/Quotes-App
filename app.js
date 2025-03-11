@@ -16,3 +16,17 @@ const getQuotes=async()=>{
 
 // ======= initial function call =======//
 getQuotes();
+
+
+// ============== implement dark mode =====//
+let icon = document.getElementById('icon');
+const changeMode=()=>{
+    document.body.classList.toggle('dark-theme');
+    if (document.body.classList.contains('dark-theme')) {
+        icon.src='/icons/sun.png';
+    }
+    else{
+        icon.src='/icons/moon.png';
+    }
+
+}
